@@ -15,4 +15,4 @@ In the end, I ended up spending too long figuring out how locks worked in Bitsy,
 
 Still, I do feel like I have a better idea of how the tool works! Plus, it was nice to get to write a bit and make little sprites.
 
-[game: Have Faith]()
+[game: Have Faith](https://github.com/eclectic-kitty/cart-315/tree/main/projects/makeAThing)
