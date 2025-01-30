@@ -16,3 +16,12 @@ In the end, I ended up spending too long figuring out how locks worked in Bitsy,
 Still, I do feel like I have a better idea of how the tool works! Plus, it was nice to get to write a bit and make little sprites.
 
 [game: Have Faith](https://github.com/eclectic-kitty/cart-315/tree/main/projects/makeAThing)
+
+## 28/01/25 | Unity Expmloration No. 1
+
+I was watching a video on how the gravity in Super Mario Galaxy works and now I'm a bit curious about messing around wiht gravity, although I'm guessing that's something we'll look at in another week.
+
+List of mechanics/features we looked at
+- Moving with keyboard keys
+- collision detection
+- sprites
