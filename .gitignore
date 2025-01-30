@@ -1,3 +1,5 @@
+classRepo/
+
 # gitignore file from NYU Game Center
 
 # ignore git config as it will be differ across clients
