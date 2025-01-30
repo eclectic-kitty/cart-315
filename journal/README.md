@@ -17,11 +17,35 @@ Still, I do feel like I have a better idea of how the tool works! Plus, it was n
 
 [game: Have Faith](https://github.com/eclectic-kitty/cart-315/tree/main/projects/makeAThing)
 
-## 28/01/25 | Unity Expmloration No. 1
+## 28/01/25 | Unity Exploration No. 1
 
-I was watching a video on how the gravity in Super Mario Galaxy works and now I'm a bit curious about messing around wiht gravity, although I'm guessing that's something we'll look at in another week.
+I was watching a video on how the gravity in Super Mario Galaxy works and now I'm a bit curious about messing around with gravity, although I'm guessing that's something we'll look at in another week.
 
-List of mechanics/features we looked at
+List of mechanics/features we looked at w/ possible experimentation directions
 - Moving with keyboard keys
+  - friction & slip?
+  - ramp up?
+  - run button?
+  - joystick controls?
+  - what if speed is jittery?
 - collision detection
+  - powerup to expand collision mask, ie make collector bigger
+  - Add floor
+    - items bounce!
 - sprites
+  - I wanna mess with the sprites somehow
+  - Sprites that flicker to something else?
+  - Sprites that scroll?
+  - Sprites that have other images randomly flash over?
+    - Ghostly
+    - High transparecny
+
+Notes
+- Starting with the sprites, giving falling items a sprite
+  - For some reason my sprite is less bright in the game, probably a lighting thing?
+    - Oh, it applies a color over the sprite? ok...
+  - Where did this filename_0 copy come from?
+    - My guess is it's a copy used for the object?
+  - Okay, how would I do multiple sprites? 
+    - Could I add a second sprite renderer to the same object? No :'(
+    - 
