@@ -5,7 +5,7 @@
 I've been thinking about ideas of faith, trust, and darkness this week, so that's what I decided to focus on for this first assignment.
 
 I did admittedly have a busy week for non-school reasons, so this was a very quick thing.
-I also haven't really used Bitsy for too long yet, so I wanted to start learning howw it works.
+I also haven't really used Bitsy for too long yet, so I wanted to start learning how it works.
 
 I began with the idea of a previous Twine project I made where I tried to make links that blended in with the background and took attention to see.
 I then tried to apply this to a lock and key system, which seems to be a core functionality in Bitsy.
@@ -68,3 +68,28 @@ Process
 Questions
 - What's up with GetComponent?
 - How do I get around there being a System.Random and a UnityEngine.Random?
+
+## 06/02/25 | Unity Exploration No. 2
+
+Stuff we did last week & possible directions
+- 2D physics
+  - Weight?
+  - Bounciness?
+  - Are there other parameters?
+  - How can we mess with these parameters in-game?
+- Sound
+  - Sound coming from different places!
+    - hide-and-seek?
+    - hot or cold?
+  - Can we do any generative sound?
+  - Integrate a Max patch?
+- Instancing
+  - :p
+
+Work!
+- Trying to make a reference to the sprite renderer component in what I was doing last week
+  - Not going well
+  - Am confused
+  - Do I know how to code???
+  - Pain
+  - (I can't quite figure out what type this variable needs to be? And looking up how to create a reference on Unity Docs is not currently being very helpful I fear)
