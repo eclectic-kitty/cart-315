@@ -93,3 +93,19 @@ Work!
   - Do I know how to code???
   - Pain
   - (I can't quite figure out what type this variable needs to be? And looking up how to create a reference on Unity Docs is not currently being very helpful I fear)
+- Abandoning that for now, like the hide-and-seek audio idea
+  - Ideating
+    - Spatial audio I don't think would work, given 2D, top down doesn't really make sense
+    - Could modulate volume as you're closer or farther
+    - could do labyrinth? Top-down?
+    - Or maybe sidescrolling hiding in / behind things?
+  - Set-up
+  	- Made an object that can move around!
+  	- Gave it audio!
+  	- Accessing other objects...
+  	  - Not sure I love how difficult it seems to be to do so from within scripts
+  	  - Especially children!
+  	  - Then again, not sure if I'm misremembering it being easier in Godot
+  	  - Anyway, I'll just reference within the editor for now
+  	  - Nevermind that didn't work...
+  	  - That's as far as I got, alas.
