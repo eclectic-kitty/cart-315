@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cardiffGiant_0: 3138320110772629963
+      cardiffGiant_1: 7753387766075516065
+      cardiffGiant_2: 3310700826590983319
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

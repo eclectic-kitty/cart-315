@@ -19,8 +19,6 @@ public class ball : MonoBehaviour
         rb = gameObject.GetComponent<Rigidbody2D>();
         StartCoroutine(Launch());
     }
-
-    private void OnCollisionEx
     
     private void OnCollisionEnter2D(Collision2D wall)
     {
