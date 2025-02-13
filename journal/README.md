@@ -109,3 +109,45 @@ Work!
   	  - Anyway, I'll just reference within the editor for now
   	  - Nevermind that didn't work...
   	  - That's as far as I got, alas.
+  	  
+## 12/02/23 | Unity Exploration No. 3
+Alrighty, after being disappointed by the amouont of work I did last week, I'm devoting myself to making a Thing this week!
+To keep things simple, I'm going to try and finish the idea I had last week, getting a limited aesthetics functional prototype with the following things
+
+Features:
+- Marco Polo
+	- Spacebar causes player avatar to make a sound
+	- It also causes the the hiding NPC to make a sound
+		- This sound is attenuated by the distance between NPC and player
+- Darkness
+	- Only the immediate area around the player is visible
+- Labyrinth
+	- Walls! Lots of them!
+	- Few dead ends, lots of paths
+	
+Having thought about this to make the list, I have ideas for potential future features I may be inclined to add and I wanna write them down so I don't forget.
+
+Potential future ideas:
+- Labyrinth
+	- Wrap around
+	- Specific spots that teleport the player
+	- Labyrinth changes around player
+	- Impossible spaces
+	- Drastic changes in scale
+	- A lot of these would probably require a camera that follows the player
+- Marco Polo
+	- Sound attenuated also by walls?
+		- Or by pathfinding?
+	- Different parts of the labyrinth have different quality?
+		- Organic walls muffle sound more
+	- Muffling in general! Different parts of a sound travel differently
+	- Giving NPC ways of trying to trick the player...
+- Darkness
+	- Torches/fuel system...
+		- Player starts to get disturbing effects, hallucinations, etc. 
+		
+Work:
+- Reading player's distance
+	- Attempting to use singleton method worked!
+	- My autocomplete seems to be mostly broken, but alas. (it's not even automatically bracketing things? Debug.Log() isn't changing colour???)
+	- In any case, i can read either my xLoc, yLoc variables, or transform.position so that's p cool.
