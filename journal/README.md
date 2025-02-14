@@ -160,9 +160,13 @@ Work:
     - but the audible difference between 0.01 - 0.02 is
 - Labyrinth
   - Oooh boy, designing and creating takes a while
-  - Gotta figure out later how tiles works here. This was painful
+  - Gotta figure out later how tiles works later. This was painful with so many different walls
   - But I have a labyrinth!
-  - uh oh, how do I make them solid...
+
+![Numerous wall objects in the unity editor](./images/WALLS.png "So many walls...")
+![A labyrinth](./images/labyrinth.png "The finished labyrinth")
+
+- uh oh, how do I make them solid...
     - Took a while to understand why the collision wasn't registering/working
       - Lots of forums online insisted the solidness would just work with the collider components
       - Then, once I realized I was going to have to handle this in the script, took a while to find out that you kinematic Rigidbodies don't register collisions with static rigidbodies...
@@ -176,3 +180,5 @@ Work:
     - Anyway, I made a "darkness" that just overlays the entire screen but is not rendered within the mask that follows the player!
 
 I think I'll leave it there for now. THe next thing to do would be to make the hider spawn in random places (and a win state :p) but I'm feeling pretty wiped out. I got really really stuck with the whole movement + collision thing. Also making the labyrinth the way I did was super time consuming, not to mention designing it in and of itself.
+
+![A ball moving around a maze that is only visible around the ball](./images/labyrinthGameplay.gif "Gameplay")
