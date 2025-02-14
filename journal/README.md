@@ -151,3 +151,28 @@ Work:
 	- Attempting to use singleton method worked!
 	- My autocomplete seems to be mostly broken, but alas. (it's not even automatically bracketing things? Debug.Log() isn't changing colour???)
 	- In any case, i can read either my xLoc, yLoc variables, or transform.position so that's p cool.
+	- Distance is simple with a built in function in the Vector3 class!
+	- Still don't really understand what the hecc IEnumerator is...
+	- It works!!!
+    - Not well, mind u
+    - The volume range Unity uses doesn't seem to be accounting for decibels being exponential I don't think?
+    - The audible difference from like, 0.1 - 0.5 is not big
+    - but the audible difference between 0.01 - 0.02 is
+- Labyrinth
+  - Oooh boy, designing and creating takes a while
+  - Gotta figure out later how tiles works here. This was painful
+  - But I have a labyrinth!
+  - uh oh, how do I make them solid...
+    - Took a while to understand why the collision wasn't registering/working
+      - Lots of forums online insisted the solidness would just work with the collider components
+      - Then, once I realized I was going to have to handle this in the script, took a while to find out that you kinematic Rigidbodies don't register collisions with static rigidbodies...
+    - Made a collision system that makes it really easy to get inside walls with reversed controls teehee
+    - Following an online tutorial, used the Input component to make the player move with the RigidBody component, which then automatically collides with walls
+  - Light, ie hiding everything not next to player
+    - I initially tried just adding a sprite mask component to the player object... Didn't work??? Not not at all, but just, weirdly
+    - In the end, I just made children
+    - Discovered semi-transparency doesn't work with masks :'(
+    - It's ok though, I just added an extra sprite with transparency
+    - Anyway, I made a "darkness" that just overlays the entire screen but is not rendered within the mask that follows the player!
+
+I think I'll leave it there for now. THe next thing to do would be to make the hider spawn in random places (and a win state :p) but I'm feeling pretty wiped out. I got really really stuck with the whole movement + collision thing. Also making the labyrinth the way I did was super time consuming, not to mention designing it in and of itself.
