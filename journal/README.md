@@ -182,3 +182,14 @@ Work:
 I think I'll leave it there for now. THe next thing to do would be to make the hider spawn in random places (and a win state :p) but I'm feeling pretty wiped out. I got really really stuck with the whole movement + collision thing. Also making the labyrinth the way I did was super time consuming, not to mention designing it in and of itself.
 
 ![A ball moving around a maze that is only visible around the ball](./images/labyrinthGameplay.gif "Gameplay")
+
+## 20/02/23 | Unity Exploration No. 4
+
+Not too too much work this week!
+I was hoping to figure out tilemaps **&** make a system to spawn the hider object, 
+but I only got around to doing the latter (I had a bit of an anxious moment with an assignment for another class and it swalloed up my weekend and then some)
+Anyway,
+
+Work:
+- Getting the hider object to spawn
+	- I made a GameManager object!

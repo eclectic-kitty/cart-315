@@ -44,4 +44,17 @@ public class HiderScript : MonoBehaviour {
 
     	return(newValue);
 	}
+
+	private void OnCollisionStay2D(Collision2D other) {
+		if (other.gameObject.tag == "Wall") {
+			Debug.Log("In wall!");
+			GameManagerScript.S.PlaceHider();
+			Destroy(gameObject);
+		}
+
+		if (other.gameObject.name == "Seeker") {
+			GameManagerScript.S.PlaceHider();
+			Destroy(gameObject);
+		}
+	}
 }
