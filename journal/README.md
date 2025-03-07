@@ -110,7 +110,7 @@ Work!
   	  - Nevermind that didn't work...
   	  - That's as far as I got, alas.
   	  
-## 12/02/23 | Unity Exploration No. 3
+## 12/02/25 | Unity Exploration No. 3
 Alrighty, after being disappointed by the amouont of work I did last week, I'm devoting myself to making a Thing this week!
 To keep things simple, I'm going to try and finish the idea I had last week, getting a limited aesthetics functional prototype with the following things
 
@@ -183,13 +183,55 @@ I think I'll leave it there for now. THe next thing to do would be to make the h
 
 ![A ball moving around a maze that is only visible around the ball](./images/labyrinthGameplay.gif "Gameplay")
 
-## 20/02/23 | Unity Exploration No. 4
+## 20/02/25 | Unity Exploration No. 4
 
 Not too too much work this week!
 I was hoping to figure out tilemaps **&** make a system to spawn the hider object, 
-but I only got around to doing the latter (I had a bit of an anxious moment with an assignment for another class and it swalloed up my weekend and then some)
+but I only got around to doing the latter (I had a bit of an anxious moment with an assignment for another class and it swallowed up my weekend and then some)
 Anyway,
 
 Work:
 - Getting the hider object to spawn
 	- I made a GameManager object!
+	- Turned hider into a prefab
+	- Now I can get GameManager to instance the hider at random spot
+	- Initial attempt crashed the computer...
+		- So many hiders...
+		- added math to the randomness to not use the entire screen resolution as a range, but instead the grid
+		- THis happened again later, but mostly stopped happening soooo who knows
+- Getting hider object to not spawn inside of walls
+	- Horrible, terrible
+	- No idea why it refuses to register collisions without physics T_T
+	- Worked eventually through some combination of physics bodies...
+
+## 06/03/25
+
+I like my labyrinth game! I think I'm going to focus on that moving forwards.
+Also, I wanna switch back over to Godot, my beloved <3
+Unfortunately, I'm not sure I remember all the details of how to use Godot...
+So, I'm going to port over my current labyrinth game to Godot to reacquaint myself
+(and learn tilesets while I'm at it so I don't spend as long recreating the labyrinth...
+
+- Hi Godot!
+	- lovelovelove the node tree system and how everything works here...
+	- Also! Love that components aren't both separate objects or you can add them to an object! Hierarchical system where each component is a separate node feels so much more intuitive
+	- Also! Accessing child nodes with a simple '$'!!! Magic!!! (It's a shorthand for a getNode function that takes a simple path along the hierarchy) (accessing parent nodes or nodes elsewhere that aren't children is a little tougher, but not tougher than in Unity)
+- Tilemap
+	- Ok this is so much simpler than I thought it would be...
+	- The interface is not *the* most intuitive, but Godot's tutorial was p easy to follow and skip pas the bits I don't need to learn right now!
+- Light
+	- So, it turns out mask sprites are not a v well supported feature in Godot atm..
+	- It does have a v easy to use built-in 2D lighting system...
+		- But it's not super flexible...
+		- I can't tint the darkness while keeping it opaque...
+		- Shadows look sick!
+			- But also it makes the walls the same black as the darkness..
+	- Found some forums of people discussing various different ways of masking, as well as someone trying to make a similar darkness system to mine
+	- Might also be a good moment to learn more about shaders
+	
+As I'm writing this during the lecture, am realizing haven't thought about the problem, the question, etc.
+Or thinking of other ideas!
+So that's going to be my first priority for next week:
+- Developing conceptually a couple of other ideas
+- Figuring out an end-of-semester goal (either developing a few prototypes or iterating on the same idea)
+- Figuring out a goal for the week
