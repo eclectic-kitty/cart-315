@@ -235,3 +235,29 @@ So that's going to be my first priority for next week:
 - Developing conceptually a couple of other ideas
 - Figuring out an end-of-semester goal (either developing a few prototypes or iterating on the same idea)
 - Figuring out a goal for the week
+
+## 20/03/25
+
+I made it so that the hider can respawn! So that's nice
+
+Features I could add this week:
+- Sanity system (not sure it's worth it without effects planned...)
+  - Could intensify hider's ability to mess with u, so both systems control it?
+  - COuld introduce the things below at new levels, then sanity controls whether they happen or not
+- Giving hider ways to mess with u due to progression
+  - Hiders spawn in maze that don't make sounds, will end game if you try to catch them
+    - Looking away makes them disappear? (Could either back up enough to make them disappear, or have a directional light)
+  - Hiders spawn that make other noises when called (prototype: diff. pitches)
+  - Hider begins to make other noises
+- Time limit
+  - Could be the thing you're acting against
+  - Potentially too simple?
+  - Not related to the vibe?
+- Sounds!
+  - feel prototype
+  - I have ideas for the calls and responses
+    - Thinking speech that is very garbled
+    
+Focusing on decoy hiders for now and levels
+- Make the darkness only come in on level two
+- Make decoys come in on level 3
