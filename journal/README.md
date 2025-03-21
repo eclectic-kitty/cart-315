@@ -236,7 +236,90 @@ So that's going to be my first priority for next week:
 - Figuring out an end-of-semester goal (either developing a few prototypes or iterating on the same idea)
 - Figuring out a goal for the week
 
-## 20/03/25
+### 13/03/25 -
+
+## Random thoughts:
+I saw a fun little trailer online for someone's horror game that utilized a webcam
+The game scanned your face and could thus detect when you were in front of the monitor. This was partly used to unlock doors with "biometric" locks that scanned your face, but also the monster that chased you around would only get you if you were visible to the webcam.
+
+I like the way this inverts the typical gaze. I might do some ideation for other ways in which I can make a game that does this to the typical player-game relationship.
+
+### Other examples I can think of:
+- Kitty Horrorshow - hexcodes for black and red (I don't remember the codes)
+	- The executable file is placed many layers deep inside folders with random strings of characters
+	- The game also breaks the fourth wall by directly telling the player it wants them to leave, to stop playing, before closing the application itself.
+- Doki Doki Literature Club
+	- Similarly breaks the fourth wall
+	- First by simply pretending to be a dating sim for a good few hours before turning into psychological horror
+	- It does this partly with "glitches" and leaving files the player can look at in the game's files
+	- Then having Monica become "sentient" and directly address the player
+- Creepypasta!
+	- Classic creepypasta setup
+	- Mysterious .exe file with a twisted version of a popular game that begins to affect the player's life
+- Not a game, but this makes me think of We're All Going to the World's Fair
+	- Multiple scenes that are framed like YouTube videos, the main character talking directly to the camera
+	- Also focuses how the online world affects the main character, how her gaze is turned back on her, *willingly*
+	
+Did some ideation in my notebook based on this, just some word association, but felt worth including:
+![ideation](./images/gaze_ideation.jpg "Ideation")
+
+Anyway, what's my feature goal today for the labyrinth
+
+I like the idea of allowing the player to rely partly on sight at first, but making sound the only stable way of telling
+- Hider camouflages itself
+- Fake walls?
+- Sudden dark patches
+- Decoy hiders
+- Endless corridors
+
+## Work
+- Tried for a bit to work on the lighting.
+	- Mainly, get the light to illuminate the wall itself, but still cast shadows
+		- Am realizing this is probs near impossible given that I want the maze to be entirely dark..
+		- After all, how is the engine supposed to know that it can light the wall immediately next to the player, but not those farther away?
+		- Certainly possible, but not in engine by default as I think this probably require visibility checks from the walls, ie, can I cast a ray directly to the player or is something else in the way?
+		- Could be fun to implement but too much work for a simple aesthetic choice, I want to focus on gameplay more
+			- Not a visual artist, so I won't be able to make a visual prototype to begin with
+	- I'll have to pick either the shadows as they are, or the simple glow around the player I had previously
+		- Going with former, as I like not being able to see a corridor until you are at the intersection
+	- Might try coding a shader to tint pure darkness?
+		- For future!
+
+- I think i might focus on either giving the hider a bit more agency rn, or a darkness & sanity system
+- Possible ways of giving hider agency:
+	- Delaying response
+		- Based on progression
+		- Randomly
+		- Based on sanity level
+	- Disguising itself
+		- camo?
+		- Looking like an environment object? (would need more assets :'( )
+		- straight up not being visible (seems unfair)
+		- Sounding like something in the environment (would need more assets :'( )
+	- Changing maze
+		- Discounted earlier due to seeming difficult with randomness, but
+		- Could prototype by having different versions of the quadrants or halves
+		- These then get swapped out every once in a while
+	- Decoy responses
+		- These would have to be identifiable somehow
+		- Pitch?
+		- Could be more degraded
+	- Mimics!
+- Darkness and sanity
+	- System
+		- Certain sections have light
+		- When outside of light sanity decreases
+		- Player can walk around outside for a bit?
+		- Or maybe they have limited torches, they can find more fuel?
+	- Effects
+		- See hider agency
+		- Light goes out momentarily
+		- Visuals or sounds change
+		
+- Want to port over hiders being able to respawn when found, keeping track of how many have been found, so as to have progression
+- Want to implement the light/sanity system, no effects yet
+
+## 20/03/25 - Iteration 3
 
 I made it so that the hider can respawn! So that's nice
 
@@ -247,17 +330,79 @@ Features I could add this week:
 - Giving hider ways to mess with u due to progression
   - Hiders spawn in maze that don't make sounds, will end game if you try to catch them
     - Looking away makes them disappear? (Could either back up enough to make them disappear, or have a directional light)
-  - Hiders spawn that make other noises when called (prototype: diff. pitches)
+  - Decoys spawn that make other noises when called (prototype: diff. pitches)
   - Hider begins to make other noises
 - Time limit
   - Could be the thing you're acting against
   - Potentially too simple?
-  - Not related to the vibe?
+  - Not related thematically?
 - Sounds!
   - feel prototype
   - I have ideas for the calls and responses
     - Thinking speech that is very garbled
+    - Like through a phone? but more
     
 Focusing on decoy hiders for now and levels
 - Make the darkness only come in on level two
-- Make decoys come in on level 3
+	- For now, I'm not creating new scenes for the levels as I'm keeping the same labyrinth
+	- Instead, the root node counts how many times the Hider has been found
+	- Thus, it makes the darkness node visible once the Hider has been found once
+	- It also makes decoys start appearing on level 3
+- Misc.
+	- I added lights in the labyrinth itself! No sanity yet, but they're there for later
+	- Had dimmed the player's light a bunch, but it looked too dim on my laptop screen, + it made the decoys and hiders only visible immediately in front of the player... So I mostly changed it back and made the torches' light a bit wider
+- Make decoys!
+	- Basic stuff
+		- I decided to make a new scene for these, although they share a lot of code with the Hider...
+		- I edited the spawn function in the root node's script so that it now accepts a preloaded scene
+		- Thus, when called, I pass a reference to either the preloaded hider or decoy scene
+		- Not sure how I want to handle the amount of decoys on screen, whether I want new ones each level, whether I want their number to increase, but I've just set it so it spawns new ones whenever one is deleted, and at the start of each level checks if there's the amount there should be (in case I make more later)
+		- Game will end if you run into one of them instead of the hider
+	- Response?
+		- For now, I'm having them respond to the player as well, but pitched down
+			- Came back to this later, making them not respond if seen
+		- Made them randomize their delay as otherwise it got confusing :p
+		- Might change this later, I like the creepiness of bumping into one but it not making any sound
+	- Getting around them?
+		- While thinking of whether I wanted the player to go all the way around them (admittedly annoying), I thought of Weeping Angels!
+		- Not implementing weeping angel rules, but playing with when a monster is visible or not is fun, so they disappear if you back away from them after seeing them
+			- To do this, I've implemented a second area in the player nodetree for the light,
+			- Thus, the decoy checks for collision with the player's light, when inside it, it changes a variable
+			- Then when the collision stops, the decoy disappears
+- Game over
+		- I made a game over screen!
+		- The player is teleported to a new scene with no walls.
+			- Currently there's a little grey flash in between...
+			- A little bit of research about scene changes revealed to me that scene transitions can be done with shaders, so I'll have to look into that...
+		- When the player calls, a hider is spawned beside them
+		- The hider responds after a second, and the game then ends!
+		- Currently did not want to do a menu screen, but also, I *have* always been a fan of games that turn themselves off... So I might keep it that way...
+
+![Gameplay](./images/decoy_ending.gif "Game ending when finding a decoy")
+		
+- Future thoughts
+	- I feel like having to avoid the decoys kind of forces one to slow down as they're playing
+		- Works as a surprisingly fun thing to play against
+		- As mentioned below though, definitely still not clear enough to the player that they're dangerous
+		- Also, it would certainly be easy for osmeone to just be very very careful when moving around
+	- It could be good with a timer, but,
+		- It ocurred to me that a limit of calls could be fun too!
+		- Being able to check if the thing in front of you is a decoy or not could work very well with that
+		- I should probs check both things
+	- I do want to make the aesthetics a bit less default, could do very simple graphics and very distorted sounds, could do it in one week I think
+	
+- Bea thots
+	- Scary! Ending!
+		- Lights!
+		- Could do to beginning as well
+	- Decoy just looks like the real one, tone thing is a little too subtle
+		- The player would want to just go for it
+		- Bea thinks the balance of info is a little off rn
+			- Possible differences: sound, visual, told information?
+- Other thots from other peeps
+	- Also found the ending a bit scarier
+	- Difficulty scaling was nice!
+	- Def need to give info on spacebar for audio cue
+	- Didn't think to press audio cue later
+	- Less ambient lights as u get further along?
+	- Decoys not distinct enough!
