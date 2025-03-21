@@ -236,15 +236,15 @@ So that's going to be my first priority for next week:
 - Figuring out an end-of-semester goal (either developing a few prototypes or iterating on the same idea)
 - Figuring out a goal for the week
 
-### 13/03/25 -
+## 13/03/25 - Iteration 3
 
-## Random thoughts:
+### Random thoughts:
 I saw a fun little trailer online for someone's horror game that utilized a webcam
 The game scanned your face and could thus detect when you were in front of the monitor. This was partly used to unlock doors with "biometric" locks that scanned your face, but also the monster that chased you around would only get you if you were visible to the webcam.
 
 I like the way this inverts the typical gaze. I might do some ideation for other ways in which I can make a game that does this to the typical player-game relationship.
 
-### Other examples I can think of:
+#### Other examples I can think of:
 - Kitty Horrorshow - hexcodes for black and red (I don't remember the codes)
 	- The executable file is placed many layers deep inside folders with random strings of characters
 	- The game also breaks the fourth wall by directly telling the player it wants them to leave, to stop playing, before closing the application itself.
@@ -272,7 +272,7 @@ I like the idea of allowing the player to rely partly on sight at first, but mak
 - Decoy hiders
 - Endless corridors
 
-## Work
+### Work
 - Tried for a bit to work on the lighting.
 	- Mainly, get the light to illuminate the wall itself, but still cast shadows
 		- Am realizing this is probs near impossible given that I want the maze to be entirely dark..
