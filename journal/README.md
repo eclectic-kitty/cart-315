@@ -236,7 +236,7 @@ So that's going to be my first priority for next week:
 - Figuring out an end-of-semester goal (either developing a few prototypes or iterating on the same idea)
 - Figuring out a goal for the week
 
-## 13/03/25 - Iteration 3
+## 13/03/25 - Iteration 2
 
 ### Random thoughts:
 I saw a fun little trailer online for someone's horror game that utilized a webcam
