@@ -468,11 +468,19 @@ My next instinct is to try my hand at some datamoshing! What immediately came to
 		- To both, I applied an EQ, with the range not cut out being a bit below the telephony narrowband range
 		- bashing was also reversed!
 		- And I applied some delay and reverb to both sounds
+    
+https://github.com/user-attachments/assets/ba0c6f9e-3b35-4abc-a472-2fd633c66afe
+
+https://github.com/user-attachments/assets/27291d86-31c8-40d9-b54d-4c036b937caf
+
 - Ambiance
 	- For this, I layered:
 		- some noise I had lying around from my desktop speakers (although I took some of the high end off)
 		- The noise mentioned earlier that I stretched a bunch and had EQ-d
 		- A very clear tone I also took from the files I imported into Audacity
+
+https://github.com/user-attachments/assets/057178f0-ad1e-4213-900b-24ac0ab071ac
+
 - Player sound
 	- I wanted to differentiate the player as less alien than the the NPCs so I ended up not going with the sounds I'd taken from the files I imported
 	- I tried saying "marco" reversed and then reversing that
@@ -483,6 +491,8 @@ My next instinct is to try my hand at some datamoshing! What immediately came to
 		- I still felt like it was missing something, and I received a suggestion from someone in the class!
 			- They suggested I slow it down with low quality and then speed it back up, and it sounded fun!
 			- It introduced a weird stutteriness, but not too too weird
+
+https://github.com/user-attachments/assets/05cee9bb-ba11-4e1b-b5c9-191c17f5a680
 
 ### Reflections
 I've started thinking about what this glitchy aesthetic I've gone with, mostly from just a gut feeling, does to the game. I certainly feel like the unsettling vibe I'm going for is settling in (others in the class agreed!), but I'm uncertain, not negatively, but just uncertain about what thematic space I'm settling into. Maybe there's something here about the entity in the game having agency over the player? I've already done that a bit with the way I have the game just end when you lose, instead of showing you a game over screen... Perhaps I'm heading in a bit of a creepypasta game kind of direction (think classic stuff like sonic.exe). 
