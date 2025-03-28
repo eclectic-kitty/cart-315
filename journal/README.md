@@ -406,3 +406,83 @@ Focusing on decoy hiders for now and levels
 	- Didn't think to press audio cue later
 	- Less ambient lights as u get further along?
 	- Decoys not distinct enough!
+	
+## 27/03/25 - Iteration 4
+
+This week I want to focus on look/feel prototyping the game
+
+Specifically I would like to add audio, and if I have time, some text and visuals
+
+### Goals?
+#### Audio:
+- Sounds for the player, hider, and decoys
+- Ambient sounds
+#### Text:
+- Instructions for player (as dialogue from hider?)
+#### sprites:
+- walls
+- player
+- hider
+- decoys
+
+### Exploring sounds:
+I began during last class by recording my voice and trying to distort it using:
+- An EQ set to a telephony narrowband range
+	- I like this! It definitely sounds like me, but I really like the imagery of phones and long distance communication that it conjures
+	- It obvs still sounds like a voice however
+	- I don't think I'll try it this week, but I could try using this as part of the distance-based effect that allows the player to find the hider, aside from simply volume
+- Just a whole bunch of clipping
+	- I definitely like hard clipping as a distortion effect, but it feels a bit too abrasive for the more creepy vibe I want, and my voice isn't all too obscured either
+- Some other kind of distortion that tbh I forgot what it was
+	- Sounds like a ray gun 😪
+	- I applied the narrowband EQ and it sounds cooler! Def still a bit of a ray gun tho
+
+My next instinct is to try my hand at some datamoshing! What immediately came to mind was opening non-audio files in audacity
+- At first, I was having trouble figuring out the raw data import settings
+	- Everything was just white(ish) noise
+	- So, I followed [this tutorial](https://www.youtube.com/watch?v=XxeXm5GAUnc)
+	- I just had to lower the bitrate!
+- Anyway, plenty of fun noises from here!
+	- I may have spent many hours doing this
+- I particularly hyperfocused on this bit of noise that had some interesting harmonics...
+	- I tried slowing it down, which didn't really change much
+	- A friend suggested filtering out the higher noisier parts of the signal, which did make it sound nicer!
+	- I also discovered that stretching it out with less quality, then stretching it out again with higher quality yielded some interesting results (especially visible in the spectrogram!
+- I also tried following [this tutorial]() about hex editing mp3 files with two techniques
+	- find and replacing random numbers
+		- I didn't like this one for my game
+		- too swooshy, not abrasive enough or particularly creepy
+	- copy-pasting large sections of the file
+		- This creates a kind of stuttering glitch, which I think is nice!
+		- With a more compressed file though, the swooshy bits come back in
+
+### No more exploration! Time to do it!
+- NPC sounds
+	- For these, I went through the files I had imported and saved clips from them with names such as:
+		- bashing.wav
+		- wail.wav
+		- waking up.wav
+		- wind in your hair.wav
+		- (I really like my names)
+	- From here, I ended up using bashing.wav and waking up.wav
+		- To both, I applied an EQ, with the range not cut out being a bit below the telephony narrowband range
+		- bashing was also reversed!
+		- And I applied some delay and reverb to both sounds
+- Ambiance
+	- For this, I layered:
+		- some noise I had lying around from my desktop speakers (although I took some of the high end off)
+		- The noise mentioned earlier that I stretched a bunch and had EQ-d
+		- A very clear tone I also took from the files I imported into Audacity
+- Player sound
+	- I wanted to differentiate the player as less alien than the the NPCs so I ended up not going with the sounds I'd taken from the files I imported
+	- I tried saying "marco" reversed and then reversing that
+		- It was too hard to recognize I think? I might try A-B-ing it later...
+	- So I just used myself saying it forwards
+		- Then I EQ-ed it
+		- Applied reverb and delay again,
+		- I still felt like it was missing something, and I received a suggestion from someone in the class!
+			- They suggested I slow it down with low quality and then speed it back up, and it sounded fun!
+			- It introduced a weird stutteriness, but not too too weird
+
+### Reflections
+I've started thinking about what this glitchy aesthetic I've gone with, mostly from just a gut feeling, does to the game. I certainly feel like the unsettling vibe I'm going for is settling in (others in the class agreed!), but I'm uncertain, not negatively, but just uncertain about what thematic space I'm settling into. Maybe there's something here about the entity in the game having agency over the player? I've already done that a bit with the way I have the game just end when you lose, instead of showing you a game over screen... Perhaps I'm heading in a bit of a creepypasta game kind of direction (think classic stuff like sonic.exe). 
