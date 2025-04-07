@@ -486,3 +486,31 @@ My next instinct is to try my hand at some datamoshing! What immediately came to
 
 ### Reflections
 I've started thinking about what this glitchy aesthetic I've gone with, mostly from just a gut feeling, does to the game. I certainly feel like the unsettling vibe I'm going for is settling in (others in the class agreed!), but I'm uncertain, not negatively, but just uncertain about what thematic space I'm settling into. Maybe there's something here about the entity in the game having agency over the player? I've already done that a bit with the way I have the game just end when you lose, instead of showing you a game over screen... Perhaps I'm heading in a bit of a creepypasta game kind of direction (think classic stuff like sonic.exe). 
+
+## 03/04/25 - Iteration 5
+
+### Goals
+- Sound
+	- Put it in the game
+	- Make sure everything's working properly
+	- (extra) Get someone's opinion on the sounds
+- Text
+	- Thematic ideation/freewriting (in notebook)
+	- dialogue/instructions
+		- second revision 
+- (extra) sprites?
+	- original idea: v simplistic Atari sprites
+	- recent idea, to go with audio: compressed, glitchy textures sourced from images
+	
+### Work
+- Sound
+	- So I put them in,,,
+		- and I kind of immediately feel that...
+			- the player sound is too normal, doesn't match the rest
+			- the ambiance shouldn't have the noise, it sounds too much like wind, and there's no wind!
+		- I'll come back to this later tho...
+- Writing
+	- I wrote in my notebook, trying to figure out what the character should be like, information, I might want to offer the player, and a bit of a dialogue.
+	- I ended up not getting very far to be honest, so that's about it for this week. I'll include notebook scans here:
+![notebook pg. 1](./images/Iteration_5_writing_1.jpg "First notebook page of writing")
+![notebook pg. 2](./images/Iteration_5_writing_2.jpg "Second notebook page of writing")
