@@ -524,3 +524,223 @@ I've started thinking about what this glitchy aesthetic I've gone with, mostly f
 	- I ended up not getting very far to be honest, so that's about it for this week. I'll include notebook scans here:
 ![notebook pg. 1](./images/Iteration_5_writing_1.jpg "First notebook page of writing")
 ![notebook pg. 2](./images/Iteration_5_writing_2.jpg "Second notebook page of writing")
+
+## 10/04/25 - Final Iteration
+
+### Goals
+Develop some random small prototype
+- Can look in my notebook for inspo
+- Should be small-scale
+- Preferrably some kind of gameplay idea I can quickly create
+
+### Work
+- Semi-Distraction
+	- I was unsatisfied with the state of my labyrinth game so for a bit I considered working on that instead...
+	- Visuals! (is what i got distracted with)
+		- Had had idea of using some modified pictures of dirt for the ground and walls
+			- I liked the idea of taking the pic myself, but alas
+			- It snowed a lot...
+		- Hadn't figured out what the avatar and hider could be
+			- I remembered this creepy little porcelain face I have!
+				- Felt good for the hider, creepy, kind of like a person?
+				- I tried taking some pictures with neutral lighting
+				- glaze made that impossible...
+				- but I did my best!
+					- I stole two lamps from around the house and set them up with paper sheets to block the direct light, which caused little reflection spots
+			- How to modify?
+				- Wanted to stick with the glitchy aesthetic from the audio
+				- I wanted to take a picture of it on a screen where you could see the pixels
+				- Not a ton of screens with low enough resolution, or a camera I could get very up-close focus with...
+				- I used my TV, as it seemed like the least pixel dense screen
+					- I also looked at my 3DS, but not enough
+				- I first hooked up my phone directly
+					- I quickly realized I can't photograph the TV with my phone while my phone is displaying something else on the TV... 🤡
+					- However, I got lots of cool photos of recursively photographing the camera app viewfinder
+					- They're wayyyy too colourful, but I wonder if I could use them as texture to overlay another picture with, or potentially change the colour to something more earthy
+				- Eventually did photograph the porcelain face with my laptop connected to the TV
+				- It felt like a good start!
+				- One I liked looked v pixelated and sharp
+				- In another, u can see the pixels, but it's lightly out of focus, which also looks nice
+	- This was where I realized this was:
+		- A. not the goal I had set for myself 
+		- B. I was beginning to go down a rabbit hole of exploration without *necessarily* getting anywhere 
+		- C. I was v anxious about the labyrinth game, which made me avoidant
+	- So I left that there and might come back to it next week
+
+- Ideation!
+	- I had just rewatched We're All Going to the World's Fair! (for another class, if only I could be watching movies for fun rn T_T)
+		- In the movie, there's a v short scene with a fake videogame where the player has to type in "I want to go to the world's fair" three times
+		- (In the movie, this is a creepypasta bloody mary type urban legend where you have to say that three times and spooky stuff happens after)
+		- I really liked this clearly not systematically deep interaction that, if the player is engaging with it, still seemed to me like it could *feel* more important?
+		- Kind of in the way that choices in KRZ feel important without actually impacting the game state or story at all
+	- I then remembered an idea I'd previusly had about wanting to provide a player text input in a game that just colours the rest of the text, in a way that *feels* more personal than it is, without the game trying to make it seem like more than it is 
+		- ex. of what I don't want:
+			- (Silent Hill: Shattered Memories, which I have watched a playthrough of) 
+			- (I tried playing it once and the chase sequences are exhausting and frustrating) 
+			- (the game has these psychonalysis sequences that change story outcomes in the main game, but they're kinda lame tbh)
+			- (they revolve around whether the character's father was a good dad, an alcoholic, or a sleaze, and changes minor story and world details accordingly)
+			- (Doesn't really feel like there's all that much input from the player)
+		- I've been fascinated with rituals, which I feel allows for interesting opportunities for players to input words that matter to them, which the character can then do things with
+		- Kind of imagining Mad Libs but not silly?
+			- Obvs lots of ways this can not work...
+			- So prototype!
+	- What kind of ritual?
+		- The easiest way to do this to me, seems like some kind of offering
+			- Perhaps to enact a transformation? 
+				- (a liminal ritual, to use performance theory jargon)
+				- (thank u Richard Schechner :* )
+			- That way the player input could come in prompts that ask the player what they want to offer
+			- I think immaterial things would probably work best
+				- like memories
+				- or feelings
+				- or sensations like smells and tastes
+		- Haruspicy!
+			- I've been specifically thinking about this one a lot (Maybe I'll put in some notebook pages, not done for this week about this?)
+			- This is divination via reading entrails!
+			- Performed most famously by Etruscans, including during the Roman Empire
+			- My thots
+				- I've had ideas around reading my own entrails swirling around for a while
+				- Also the song Haruspex by Maria BC has these lines I love: "always on my mind: ‘is my body right?’ / a pound of flesh / a dime for the haruspex"
+				- I like the desperation of a bodily sacrifice, of connecting with blood and guts and the *body* in order to read your future, to fuel something far less material
+			- Anyway, can it work?
+				- more detail in my notebook scans, but I couldn't really figure out how to integrate the gameplay idea into a haruspicy ritual...
+				- After all, the whole point is having things told back to you, not you giving anything other than the life of the animal
+				- Plus I don't want to deal with giving the player feedback rn... That can come later
+				- However, I did think of putting things inside your self, replacing an organ with these things
+				- As well as the image of reaching into a screen with your image on it 
+					- (can u tell I've been thinking about Jane Schoenbrun's work?)
+	- So, I think the final idea is:
+		- Walking through woods
+		- Collecting various immaterial things the player inputs
+		- Arriving at a TV
+		- Cutting into the screen, placing the items inside (the player and TV)
+		- Repeating an incantation
+		- Game ends
+- More specific ideation
+	- What things could I ask the player to input?
+		- Memories
+			- earliest memory?
+			- the first time you felt heartbreak?
+			- first time you realized you couldn't trust somebody?
+			- When you felt most insecure?
+			- last time you saw yourself?
+			- last time you felt comfortable in your body?
+			- last time you forgot your body
+			- first time you realized your body was fragile
+			- The most pain you've ever felt
+			- Most serious medical issue
+		- Sensations
+			- touch
+				- something rough
+				- something smooth
+			- smell / taste
+				- sweet
+				- savory
+				- floral
+				- bitter
+			- sound
+				- comforting
+				- quiet
+				- loud
+				- harsh
+				- soft
+			- sight
+				- colour
+				- shape
+		- Emotions
+			- sadness
+				- devastation
+				- melancholy
+				- heartbreak
+				- ennui
+				- depression
+				- apathy
+				- shame
+			- happiness
+				- ecstasy
+				- excitement
+				- contentment
+				- safety
+				- enamoured
+				- comfort
+				- peaceful
+			- anger
+				- fury
+				- frustration
+				- annoyance
+				- jealousy
+				- seething
+				- violent
+		- Misc Questions
+				- The most colourful object you own
+				- An object gifted to you by a loved one and its colour
+				- The garment you wore most in high school
+				- Favourite food as a kid
+				- Favourite game to play as a kid
+				- Favourite word to say
+				- First word you said
+				- What is a sound you hear every day?
+				- What is a scent that makes you feel safe?
+		- So I think the way to go here is to ask for specific sensations that are tied to either specific memories or to emotions
+			- I'm thinking of a writing exercise I did last semester
+				- I had to recall a memory
+				- Then from there, build out the senses of that memory
+			- For some other time
+				- Also realizing there's no way to make sure everyone would have an answer without making them too general... 
+				- So perhaps giving the ability to skip could be a good idea
+				- Or, if I want a more specific memory, giving player ability to choose?
+					- Kinda like bank security questions
+			- For now, running out of time, so I'll make up 4 questions
+			- Two more specific ones, two sense + emotion ones?
+				- A sound you hear every day
+				- A physical sensation that makes you feel safe?
+				- A flavour you would associate with yourself? (least sure aboute this one tbh)
+					- A flavour associated with your childhood
+				- A scent from the last time you felt heartbreak (not necessarily romantic)
+- Writing!!!
+	- Not much to say here tbh! I just kind of wrote it!
+	- I did intentionally decide to have you press "walk" three times cuz like... threes! It feels like a good and powerful number
+	- I was really hoping the update to Chapbook (the story engine I used) would fix the bugs I had last time I used it but...
+		- Transitions between pages is inconsistent...
+		- The timing of passages that fade in is also borked...
+		- The colour of the underline also refuses to change... (if the underline shows up at all lol)
+	- P much improvised the writing, but I like my variations on the flowers and the trees
+	- Could def add more to the walking and clearing descriptions though
+	- Also the TV doesn't feel as well integrated as I'd like
+	- Lastly, not much of an ending teehee
+	- Questions
+		- The wording around what to call the things (scent vs smell, feeling vs touch vs sensation, etc.) was a little tough, and I'm not 100% satisfied tbh
+- Feedback
+	- People def liked it overall! Ego Boost!
+		- Especially for the writing which was pretty much improvised ^_^
+		- I better get into the creative writing minor...
+	- Bea said some interesting stuff about timing
+		- Expressed that they were wondering *if* their answers were going to come back
+		- Then that it was very satisfying when they did, but,
+		- That it was especially satisfying due to the lengthy amount of time between input and seeing them again!
+		- I def tend towards slower pacing overall, and Twine with its revealed passages def lets me indulge, but I hadn't been thinking about it from the perspective of the satisfaction of seeing things come back
+		- I think playing with this timing further could be very fruitful
+	- Eric said it was like therapy
+		- He further detailed that the experience was immersive, non-judgemental, introspective
+		- A nice break
+		- Certainly part of what I was going for
+		- That being said, I definitely had a slightly creepier vibe in mind
+		- I wonder how I can use the answers in more unsettling/disturbing ways
+		- Is this a good thing to do? If not done carefully or with intent, this could easily become just a cheap shock
+		- Does this imply it would be better for this to just be characters? Like KRZ does?
+		- Interesting questions!
+	- Lastly,
+		- The answers people put in were certainly a little less detailed than I think I was hoping for
+		- Wondering if I could lead people up to the questions a bit more, perhaps with inputs that don't directly go somewhere? Or maybe wittle down the prompts to more specific ones?
+		
+Images:
+Notebook pages!
+![A scan of a notebook page](./images/ritual_ideation.jpg "First notebook page of writing")
+![A scan of a notebook page](./images/ritual_ideation_2.jpg "Second notebook page of writing")
+
+Baby faces!
+![A porcelain baby face on a TV](./images/baby_face_1.jpg "pixelated baby")
+![A porcelain baby face on a TV](./images/baby_face_2.jpg "blurry baby")
+
+TV artifacts!
+![Various pixelated colourful patterns](./images/screens.jpg "TV artifacts!")
